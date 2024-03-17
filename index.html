@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>shyam</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="welcome">
+              <h1>Hello Nandita </h1>
+              <hr>
+              <hr>
+
+              <p>please password sirf 2 he bar enter kariye ga barna sara messege delete ho jayega jo maine aapke liye likha hai , galt password mat dalna password enme se ak hai jo aap mujhe gusse se aur pyar se bolte hai <b> (kumar,pagal, buddhu, nalayak, shyam, bafkuf, darpok, kamina, ghamndi, brave, dhokebaj, badmas) </b> enme se koye ak password hai sirf 2 bar he enter karna . </p>
+              
+       </div>
+
+       <div class="password">
+              <h2>Enter password</h2> <input class="input" type="text" name="" id="inp" placeholder="mai jis  name se aapko bulata hoo wo name type kariye">
+              <br>
+              <button onclick="print()" class="btn"> nandu ! ab es button ko click kariye </button>
+       </div>
+
+       <p id="demo">. password Enter time Left ❤️1</p>
+
+
+       
+</body>
+
+<script type="text/javascript">
+       
+       let name = document.getElementsByClassName("input").value;
+       let name2 = document.getElementById("inp").value;
+       
+       function myFunction() {
+         document.getElementById("demo").innerHTML = `Wrong Password!! your time left ❤️${time}`;
+       }
+
+       let x;
+       let time = 1;
+       function print() {
+       x = document.getElementById("inp").value;
+       alert("sorry a wala message mai whatsapp pe v kar sakta tha lakin ak to aap mana karke rakhe hai or aapke mummy ke dar se ..... mujhe iha pe likha pada ");
+
+       document.getElementById('inp').value = null;
+
+       if(x == "buddhu" || x == "Buddhu" || x == "Darpok" || x == "darpok" ) {
+              window.open("index2.html");
+       }
+       else {
+
+
+              if(time == 0) {
+                     alert("please or password Enter mat karna barna sara data delete ho jayega !!")
+              }
+              myFunction();
+              time--;
+       }
+
+}
+
+
+       
+</script>
+</html>
